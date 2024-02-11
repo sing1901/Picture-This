@@ -15,7 +15,42 @@
       <h1>Picture this!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
+
+    <picture>
+      <!-- the picture tag -->
+      <!-- the landscape photo -->
+      <source srcset="images/jmuseum-320_x_180.jpg,
+         images/jmuseum-640_x_360.jpg 2x,
+         images/jmuseum-960_x_540.jpg 3x" media="(max-width: 319px)"/>
+
+      <source srcset="images/jmuseum-480_x_270.jpg,
+        images/jmuseum-960_x_540.jpg 2x,
+        images/jmuseum-1440_x_810.jpg 3x" media="(min-width: 320px) and (max-width: 479px)"/>
+
+      <source srcset="images/jmuseum-720_x_405.jpg,
+        images/jmuseum-1440_x_810.jpg 2x,
+        images/jmuseum-2160_x_1215jpg 3x" media="(min-width: 480px) and (max-width:719px)"/>
+
+      <source srcset="images/jmuseum-960_x_540.jpg,
+        images/jmuseum-1920_x_1080.jpg 2x,
+        images/jmuseum-2880_x_1621.jpg 3x" media="(min-width: 720px) and (max-width: 959px)" />
+
+
+
+      <!-- Square photo  -->
+
+  <source srcset="images/jmuseum-960_x_960.jpg,
+        images/jmuseum-1440_x_1440.jpg" media="(min-width: 960px) and (max-width: 1439px)" />
+      
+   <source srcset="images/jmuseum-1280_x_1280.jpg,
+        images/jmuseum-1920_x_1920.jpg" media="(min-width: 1279px) and (max-width: 1920px)" />
+
+      <source srcset="images/jmuseum-1600_x_1600.jpg,
+        images/jmuseum-2400_x_2400.jpg" media="(min-width: 960px)" />
+
+    
     <img src="images/museum.jpg" alt="placeholder">
+  </picture>
 
   </header>
 </body>
